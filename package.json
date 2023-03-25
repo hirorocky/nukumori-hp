@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "postbuild": "next-sitemap"
+    "export": "next build & next export",
+    "postexport": "next-sitemap"
   },
   "dependencies": {
     "next": "^12.1.5",

@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# typescript
+next-env.d.ts
+
 # production
 /build
 

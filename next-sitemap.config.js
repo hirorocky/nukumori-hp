@@ -3,6 +3,6 @@
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
   changefreq: "weekly",
-  outDir: "./out",
+  outDir: "./public",
   generateRobotsTxt: true,
 };

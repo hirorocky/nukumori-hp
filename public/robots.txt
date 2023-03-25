@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nukumori-gay.space
+
+# Sitemaps
+Sitemap: https://nukumori-gay.space/sitemap.xml

@@ -19,15 +19,24 @@ export default function Home()
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">ぬくもりげいすきー</h1>
               <p className="mt-6 text-base leading-8 text-gray-400">
-                これは、ゲイの方が利用されることを想定した、分散型SNS Misskeyサーバーです。
+                こちらは、ゲイの方が利用されることを想定した、分散型SNS Misskeyのサーバーです。
               </p>
               <p className="text-base leading-8 text-gray-400">
                 日常の中に、ぬくもりのあるコミュニケーションを、もうひとつ築いてみませんか。
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a href="https://mi.nukumori-gay.space" className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">サーバーをみてみる</a>
+                <a href="https://mi.nukumori-gay.space" className="inline-flex rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
+                  <svg className="stroke-1 hover:stroke-2 w-5 h-5 mr-2" aria-hidden="true" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                  覗いてみる
+                </a>
 
-                <Link href="/misskey/concept"><a className="text-sm font-semibold leading-6 text-gray-100">コンセプト <span aria-hidden="true">→</span></a></Link>
+                <Link href="/misskey/concept">
+                  <a className="text-sm font-semibold leading-6 text-gray-100">
+                    コンセプト <span aria-hidden="true">→</span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

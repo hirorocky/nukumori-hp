@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "sitemap": "next-sitemap",
+    "sitemap": "next build & next-sitemap",
     "export": "next build & next export"
   },
   "dependencies": {

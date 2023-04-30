@@ -1,6 +1,8 @@
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Link from "next/link";
+import Image from "next/image";
+import mogePic from "../public/moge.png";
 
 export default function Home()
 {
@@ -10,7 +12,7 @@ export default function Home()
 
       <main className="bg-gray-800 min-h-[90vh]">
         <div className="relative isolate px-6 pt-14 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
             {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                   このサーバは皆様の寄付で運営しております。 <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>寄付をする <span aria-hidden="true">&rarr;</span></a>
@@ -37,6 +39,29 @@ export default function Home()
                     コンセプト <span aria-hidden="true">→</span>
                   </a>
                 </Link>
+              </div>
+
+              <div className="mt-20 flex flex-wrap gap-5">
+                <div className="grow md:flex-none text-center">
+                  <Image src={mogePic} className="rounded-full max-w-xs" alt="もげもげ" width={200} height={200} />
+                </div>
+                <div className="flex-1 min-w-full md:min-w-0 text-left">
+                  <p className="text-gray-400">ChatGPTを用いたBot</p>
+                  <p className="text-white text-2xl">もげもげ</p>
+                  <p className="mt-8 text-white">
+                    このサーバーにはChatGPTを用いた、自動投稿Botがいます。
+                    1日1回程度、ランダムな時間につぶやくので、楽しみにしてください。
+                    いたずらが好きなおばけだよ。
+                  </p>
+                  <div className="mt-4 text-gray-300">
+                    <li>
+                      今のところ一方的につぶやくだけで、返信やリアクションは認識しません。
+                    </li>
+                    <li>
+                      ChatGPTの特性上、間違った情報を言う可能性があります。ご了承ください。
+                    </li>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

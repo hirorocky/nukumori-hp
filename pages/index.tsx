@@ -55,7 +55,7 @@ export default function Home()
                   </p>
                   <div className="mt-4 text-gray-300">
                     <li>
-                      今のところ一方的につぶやくだけで、返信やリアクションは認識しません。
+                      @mogemogeとメンションを付けると反応してくれることがあります。
                     </li>
                     <li>
                       ChatGPTの特性上、間違った情報を言う可能性があります。ご了承ください。

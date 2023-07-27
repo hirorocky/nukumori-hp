@@ -64,7 +64,7 @@ export default function Concept()
                 2023/3/25 hiro
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link href="/"><a className="text-sm font-semibold leading-6 text-gray-100"><span aria-hidden="true">←</span> 戻る</a></Link>
+                <Link href="/"><span className="text-sm font-semibold leading-6 text-gray-100"><span aria-hidden="true">←</span> 戻る</span></Link>
               </div>
             </div>
           </div>

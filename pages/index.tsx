@@ -35,9 +35,9 @@ export default function Home()
                 </a>
 
                 <Link href="/misskey/concept">
-                  <a className="text-sm font-semibold leading-6 text-gray-100">
+                  <span className="text-sm font-semibold leading-6 text-gray-100">
                     コンセプト <span aria-hidden="true">→</span>
-                  </a>
+                  </span>
                 </Link>
               </div>
 

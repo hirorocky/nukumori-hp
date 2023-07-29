@@ -1,4 +1,3 @@
-import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Link from "next/link";
 
@@ -6,7 +5,6 @@ export default function Concept()
 {
   return (
     <>
-      <Header title="ぬくもりげいすきー - コンセプト" />
       <main className="bg-gray-800 min-h-[90vh]">
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">

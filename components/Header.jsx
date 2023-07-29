@@ -1,5 +1,7 @@
+"use client";
+
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const description = "ゲイの方向けの、分散型SNS Misskeyサーバーです。ぬくもりのあるウェブコミュニケーションをあなたの日常に。";
 const imageUrl = "https://storage.googleapis.com/mi_nukumori_gay_bucket/mi_nukumori_gay_bucket/banner.jpg";

@@ -48,7 +48,7 @@ export default function Home()
                 <div className="mt-20 backdrop-blur-sm bg-white/20 rounded-md p-6 text-left w-fit">
                   <h2 className="text-gray-100 text-2xl font-semibold mb-3">コンセプト</h2>
                   <p className="text-gray-100">● 飾らなくていい、不正解なんてない。そのままの自分を表現しよう！</p>
-                  <p className="text-gray-100">● そんな投稿にスタンプでぬくもりのあるリアクションを！</p>
+                  <p className="text-gray-100">● そんな投稿にぬくもりのあるリアクションを！</p>
                   <p className="text-gray-100">● 「ここにくればみんなが迎えてくれる」そんな場に！</p>
                 </div>
               </div>

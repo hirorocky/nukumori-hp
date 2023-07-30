@@ -8,13 +8,8 @@ export default function Home()
   return (
     <>
       <main className="bg-gray-800 min-h-[90vh]">
-        <div className="relative isolate px-6 pt-14 lg:px-8">
-          <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
-            {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  このサーバは皆様の寄付で運営しております。 <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>寄付をする <span aria-hidden="true">&rarr;</span></a>
-                </div>
-              </div> */}
+        <div className="relative isolate px-6 lg:px-8">
+          <div className="mx-auto max-w-5xl py-32 sm:py-48">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">ぬくもりげいすきー</h1>
               <p className="mt-6 text-base leading-8 text-gray-400">
@@ -24,21 +19,41 @@ export default function Home()
                 日常の中に、ぬくもりのあるコミュニケーションを、もうひとつ築いてみませんか。
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a href="https://mi.nukumori-gay.space" className="inline-flex rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
-                  <svg className="stroke-2 w-5 h-5 mr-2" aria-hidden="true" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                <a href="https://mi.nukumori-gay.space" className="inline-flex rounded-md bg-gradient-to-r to-orange-600 from-amber-400 hover:saturate-150 drop-shadow-xl px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
+                  <svg className="w-7 h-7 mr-2" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M34.16 106.51C18.73 106.51 6.19 87.44 6.19 64c0-23.44 12.55-42.51 27.97-42.51c15.42 0 27.97 19.07 27.97 42.51c0 23.44-12.55 42.51-27.97 42.51z" fill="#fafafa"></path>
+                      <path d="M34.16 23.49c6.63 0 12.98 4 17.87 11.27c5.22 7.75 8.1 18.14 8.1 29.24s-2.88 21.49-8.1 29.24c-4.89 7.27-11.24 11.27-17.87 11.27s-12.98-4-17.87-11.27C11.06 85.49 8.19 75.1 8.19 64s2.88-21.49 8.1-29.24c4.89-7.27 11.23-11.27 17.87-11.27m0-4C17.61 19.49 4.19 39.42 4.19 64s13.42 44.51 29.97 44.51S64.13 88.58 64.13 64S50.71 19.49 34.16 19.49z" fill="#b0bec5"></path>
+                      <linearGradient id="IconifyId17ecdb2904d178eab7946" gradientUnits="userSpaceOnUse" x1="22.523" y1="46.676" x2="22.523" y2="82.083">
+                        <stop offset="0" stop-color="#424242"></stop>
+                        <stop offset="1" stop-color="#212121"> </stop>
+                      </linearGradient>
+                      <path d="M25.63 59.84c-2.7-2.54-2.1-7.58 1.36-11.26c.18-.19.36-.37.55-.54c-1.54-.87-3.23-1.36-5.01-1.36c-7.19 0-13.02 7.93-13.02 17.7s5.83 17.7 13.02 17.7s13.02-7.93 13.02-17.7c0-1.75-.19-3.45-.54-5.05c-3.24 2.33-7.11 2.64-9.38.51z" fill="url(#IconifyId17ecdb2904d178eab7946)"></path>
+                      <g>
+                        <ellipse cx="93.84" cy="64" rx="29.97" ry="44.51" fill="#eee"> </ellipse>
+                        <path d="M93.84 106.51c-15.42 0-27.97-19.07-27.97-42.51c0-23.44 12.55-42.51 27.97-42.51c15.42 0 27.97 19.07 27.97 42.51c0 23.44-12.54 42.51-27.97 42.51z" fill="#fafafa"> </path>
+                        <path d="M93.84 23.49c6.63 0 12.98 4 17.87 11.27c5.22 7.75 8.1 18.14 8.1 29.24s-2.88 21.49-8.1 29.24c-4.89 7.27-11.24 11.27-17.87 11.27s-12.98-4-17.87-11.27c-5.22-7.75-8.1-18.14-8.1-29.24s2.88-21.49 8.1-29.24c4.89-7.27 11.24-11.27 17.87-11.27m0-4c-16.55 0-29.97 19.93-29.97 44.51s13.42 44.51 29.97 44.51S123.81 88.58 123.81 64s-13.42-44.51-29.97-44.51z" fill="#b0bec5"></path>
+                        <linearGradient id="IconifyId17ecdb2904d178eab7947" gradientUnits="userSpaceOnUse" x1="82.209" y1="46.676" x2="82.209" y2="82.083"> <stop offset="0" stop-color="#424242"> </stop> <stop offset="1" stop-color="#212121"> </stop></linearGradient>
+                        <path d="M85.31 59.84c-2.7-2.54-2.1-7.58 1.36-11.26c.18-.19.36-.37.55-.54c-1.54-.87-3.23-1.36-5.01-1.36c-7.19 0-13.02 7.93-13.02 17.7s5.83 17.7 13.02 17.7c7.19 0 13.02-7.93 13.02-17.7c0-1.75-.19-3.45-.54-5.05c-3.23 2.33-7.11 2.64-9.38.51z" fill="url(#IconifyId17ecdb2904d178eab7947)"></path>
+                      </g>
+                    </g>
                   </svg>
                   覗いてみる
                 </a>
-
-                <Link href="/misskey/concept">
-                  <span className="text-sm font-semibold leading-6 text-gray-100">
-                    コンセプト <span aria-hidden="true">→</span>
-                  </span>
-                </Link>
               </div>
 
-              <div className="mt-20 flex flex-wrap gap-5">
+              <div className="flex justify-center">
+                <div className="mt-20 backdrop-blur-sm bg-white/20 rounded-md p-6 text-left w-fit">
+                  <h2 className="text-gray-100 text-2xl font-semibold mb-3">コンセプト</h2>
+                  <p className="text-gray-100">● 飾らなくていい、不正解なんてない。そのままの自分を表現しよう！</p>
+                  <p className="text-gray-100">● そんな投稿にスタンプでぬくもりのあるリアクションを！</p>
+                  <p className="text-gray-100">● 「ここにくればみんなが迎えてくれる」そんな場に！</p>
+                </div>
+              </div>
+
+              <div className="mt-10 flex flex-wrap gap-5">
                 <div className="grow md:flex-none text-center">
                   <Image src={mogePic} className="rounded-full max-w-xs" alt="もげもげ" width={200} height={200} />
                 </div>

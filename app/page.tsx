@@ -19,7 +19,7 @@ export default function Home()
                 日常の中に、ぬくもりのあるコミュニケーションを、もうひとつ築いてみませんか。
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a href="https://mi.nukumori-gay.space" className="inline-flex rounded-md bg-gradient-to-r to-orange-600 from-amber-400 hover:saturate-150 drop-shadow-xl px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
+                <a href="https://mi.nukumori-gay.space" className="inline-flex rounded-md bg-gradient-to-r to-orange-600 from-amber-400 hover:saturate-150 shadow-lg shadow-orange-500/50 px-3.5 py-2.5 text-xl font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
                   <svg className="w-7 h-7 mr-2" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" fill="#000000">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

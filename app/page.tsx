@@ -1,7 +1,10 @@
 import Footer from "@components/Footer";
-import Link from "next/link";
 import Image from "next/image";
 import mogePic from "../public/moge.png";
+import { Suspense } from "react";
+import { ServerStatus } from "../components/ServerStatus";
+
+export const fetchCache = "only-no-store";
 
 export default function Home()
 {
@@ -21,27 +24,34 @@ export default function Home()
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a href="https://mi.nukumori-gay.space" className="inline-flex rounded-md bg-gradient-to-r to-orange-600 from-amber-400 hover:saturate-150 shadow-lg shadow-orange-500/50 px-3.5 py-2.5 text-xl font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
                   <svg className="w-7 h-7 mr-2" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
                       <path d="M34.16 106.51C18.73 106.51 6.19 87.44 6.19 64c0-23.44 12.55-42.51 27.97-42.51c15.42 0 27.97 19.07 27.97 42.51c0 23.44-12.55 42.51-27.97 42.51z" fill="#fafafa"></path>
                       <path d="M34.16 23.49c6.63 0 12.98 4 17.87 11.27c5.22 7.75 8.1 18.14 8.1 29.24s-2.88 21.49-8.1 29.24c-4.89 7.27-11.24 11.27-17.87 11.27s-12.98-4-17.87-11.27C11.06 85.49 8.19 75.1 8.19 64s2.88-21.49 8.1-29.24c4.89-7.27 11.23-11.27 17.87-11.27m0-4C17.61 19.49 4.19 39.42 4.19 64s13.42 44.51 29.97 44.51S64.13 88.58 64.13 64S50.71 19.49 34.16 19.49z" fill="#b0bec5"></path>
                       <linearGradient id="IconifyId17ecdb2904d178eab7946" gradientUnits="userSpaceOnUse" x1="22.523" y1="46.676" x2="22.523" y2="82.083">
-                        <stop offset="0" stop-color="#424242"></stop>
-                        <stop offset="1" stop-color="#212121"> </stop>
+                        <stop offset="0" stopColor="#424242"></stop>
+                        <stop offset="1" stopColor="#212121"> </stop>
                       </linearGradient>
                       <path d="M25.63 59.84c-2.7-2.54-2.1-7.58 1.36-11.26c.18-.19.36-.37.55-.54c-1.54-.87-3.23-1.36-5.01-1.36c-7.19 0-13.02 7.93-13.02 17.7s5.83 17.7 13.02 17.7s13.02-7.93 13.02-17.7c0-1.75-.19-3.45-.54-5.05c-3.24 2.33-7.11 2.64-9.38.51z" fill="url(#IconifyId17ecdb2904d178eab7946)"></path>
                       <g>
                         <ellipse cx="93.84" cy="64" rx="29.97" ry="44.51" fill="#eee"> </ellipse>
                         <path d="M93.84 106.51c-15.42 0-27.97-19.07-27.97-42.51c0-23.44 12.55-42.51 27.97-42.51c15.42 0 27.97 19.07 27.97 42.51c0 23.44-12.54 42.51-27.97 42.51z" fill="#fafafa"> </path>
                         <path d="M93.84 23.49c6.63 0 12.98 4 17.87 11.27c5.22 7.75 8.1 18.14 8.1 29.24s-2.88 21.49-8.1 29.24c-4.89 7.27-11.24 11.27-17.87 11.27s-12.98-4-17.87-11.27c-5.22-7.75-8.1-18.14-8.1-29.24s2.88-21.49 8.1-29.24c4.89-7.27 11.24-11.27 17.87-11.27m0-4c-16.55 0-29.97 19.93-29.97 44.51s13.42 44.51 29.97 44.51S123.81 88.58 123.81 64s-13.42-44.51-29.97-44.51z" fill="#b0bec5"></path>
-                        <linearGradient id="IconifyId17ecdb2904d178eab7947" gradientUnits="userSpaceOnUse" x1="82.209" y1="46.676" x2="82.209" y2="82.083"> <stop offset="0" stop-color="#424242"> </stop> <stop offset="1" stop-color="#212121"> </stop></linearGradient>
+                        <linearGradient id="IconifyId17ecdb2904d178eab7947" gradientUnits="userSpaceOnUse" x1="82.209" y1="46.676" x2="82.209" y2="82.083"> <stop offset="0" stopColor="#424242"> </stop> <stop offset="1" stopColor="#212121"> </stop></linearGradient>
                         <path d="M85.31 59.84c-2.7-2.54-2.1-7.58 1.36-11.26c.18-.19.36-.37.55-.54c-1.54-.87-3.23-1.36-5.01-1.36c-7.19 0-13.02 7.93-13.02 17.7s5.83 17.7 13.02 17.7c7.19 0 13.02-7.93 13.02-17.7c0-1.75-.19-3.45-.54-5.05c-3.23 2.33-7.11 2.64-9.38.51z" fill="url(#IconifyId17ecdb2904d178eab7947)"></path>
                       </g>
                     </g>
                   </svg>
                   覗いてみる
                 </a>
+              </div>
+
+              <div className="mt-5 text-white">
+                <Suspense fallback={<p>サーバー稼働状況を取得しています...</p>}>
+                  {/* @ts-expect-error Server Component */}
+                  <ServerStatus />
+                </Suspense>
               </div>
 
               <div className="flex justify-center">

@@ -28,7 +28,10 @@
       ],
       "@libs/*": [
         "libs/*"
-      ]
+      ],
+      "@domain/*": [
+        "domain/*"
+      ],
     },
     "plugins": [
       {

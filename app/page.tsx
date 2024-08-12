@@ -3,7 +3,7 @@
 import Footer from "@components/Footer";
 import Image from "next/image";
 import mogePic from "../public/moge.png";
-import { ServerStatus } from "../components/ServerStatus";
+import { ServerStatusText } from "../components/ServerStatusText";
 
 export const fetchCache = "only-no-store";
 
@@ -49,7 +49,7 @@ export default function Home()
               </div>
 
               <div className="mt-5 text-white">
-                <ServerStatus />
+                <ServerStatusText />
               </div>
 
               <div className="flex justify-center">

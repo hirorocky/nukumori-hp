@@ -21,6 +21,9 @@ export const client = createClient({
 export const getServerStatus = async () => {
   const status = await client.get<ServerStatus>({
     endpoint: "status",
+    customRequestInit: {
+      cache: "no-store",
+    },
   });
 
   return status.text;

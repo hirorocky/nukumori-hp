@@ -1,11 +1,11 @@
-"use client";
-
 import Footer from "@components/Footer";
 import Image from "next/image";
 import mogePic from "../public/moge.png";
 import { ServerStatusText } from "../components/ServerStatusText";
+import { Suspense } from "react";
 
 export const fetchCache = "only-no-store";
+export const dynamic = "force-dynamic";
 
 export default function Home()
 {
@@ -49,7 +49,10 @@ export default function Home()
               </div>
 
               <div className="mt-5 text-white">
-                <ServerStatusText />
+                <Suspense fallback={<div>サーバーの稼働状況を確認しています...</div>}>
+                  {/* @ts-expect-error Server Component */}
+                  <ServerStatusText />
+                </Suspense>
               </div>
 
               <div className="flex justify-center">
